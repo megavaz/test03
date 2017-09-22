@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <stdio.h>
 
 using namespace std;
 
@@ -21,8 +22,11 @@ int main()
 	}
     int k=0;
     for (int i=0; i<n; i++){
+	for (int b=(n-1-i)*4.5; b>0;b--)
+		cout<<" ";
 	for (int j=0; j<=i; j++)
-	    {cout<<v[k]<<" ";
+		{
+	    printf("%8d ", v[k]);
 	    k++;}
 	    cout<<endl;}	    
     return 0;
